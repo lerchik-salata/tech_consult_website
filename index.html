@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">   
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Main page</title>
+</head>
+<body>
+    <div class="modal" id="modal">
+        <div class="modal_content">
+          <h3 class="heading_tertiary">Welcome to Avenga!</h3>
+          <p class="text_small">This site employs cookies and similar technologies to collect device and personal data. This data processing serves various purposes, including integrating content, external services, third-party elements, statistical analysis, and social media features. Depending on the functionality, some data may be shared with third parties. Your consent is optional and not necessary for using our website; you may choose to decline or withdraw it at any time. By consenting, you agree to the use of cookies across all Avenga International GmbH websites.</p>
+          <div class="modal_btns">
+             <button class="btn_secondary">Settings</button>
+             <button class="btn_primary">Accept Everything</button>
+             <button class="btn_secondary">Reject all</button>
+          </div>
+        </div>
+        <div class="modal_links">
+            <a href="#" class="link">Legal notice</a>
+            <a href="#" class="link">Data protection notice</a>
+        </div>
+      </div>
+      <div class="overlay" id="overlay"></div>
+
+    <div class="container">
+        <header class="header">
+            <div class="header_logo_container">
+                <a href="/" class="header_logo">
+                    <img src="assets/img/logo.png" alt="Logo">
+                </a>
+                <button class="header_btn_search">
+                    <img src="assets/img/search.svg" alt="Search button">
+                </button>
+            </div>
+            <nav>
+                <ul class="header_menu" id="headerMenu">
+                <li><a href="/" class="header_link">Home</a></li>
+                <li><a href="/" class="header_link">Industries</a></li>
+                <li><a href="/" class="header_link">Services</a></li>
+                <li><a href="/" class="header_link">Technologies</a></li>
+                <li><a href="/" class="header_link">Success</a></li>
+                <li><a href="/" class="header_link">About</a></li>
+                <li><a href="/" class="header_link">Insights</a></li>
+                <li><a href="/" class="header_link">Career</a></li>
+                <li><a href="/" class="header_link">Contact us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header_select">
+                <select name="language" id="language">
+                    <option value="en">Global (EN)</option>
+                </select>
+            </div>
+            <div class="burger" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        <div class="navigation_path">
+            <a href="/" class="navigation_link">Service offerings</a>
+            <span>/</span>
+            <a class="navigation_link navigation_link_active">Technology Consulting Services</span>
+        </div>
+    </div>
+    <main>
+        <section class="hero_section">
+            <div class="container">
+                <div class="hero_info">
+                    <h1 class="heading_primary">Technology Consulting Services</h1>
+                    <p class="text_medium">Avenga delivers in-depth technology consulting that supports organizations through every stage of their digital journey. From ideation and validation to design, engineering, testing, deployment, and ongoing maintenance, we accelerate digital transformation by leveraging cutting-edge analytics and artificial intelligence.</p>
+                    <button class="btn_primary" id="openModalBtn">Get in touch
+                      <img src="assets/img/arrow.svg" alt="Arrow">
+                    </button>
+                </div>
+                <div class="hero_img">
+                     <img src="assets/img/hero_img.png" alt="Hero image">
+                </div>
+            </div>
+        </section>
+        <div class="divider">
+            <div class="container">
+                <ul class="divider_logos">
+                    <li><img src="assets/img/divider_logo1.png" alt="Logo"></li>
+                    <li><img src="assets/img/divider_logo2.png" alt="Logo"></li>
+                    <li><img src="assets/img/divider_logo3.png" alt="Logo"></li> 
+                    <li><img src="assets/img/divider_logo4.png" alt="Logo"></li>
+                    <li><img src="assets/img/divider_logo5.png" alt="Logo"></li>
+                </ul>
+            </div>
+        </div>
+        <section class="news_section">
+            <div class="container">
+                <div class="news">
+                    <article class="news_item">
+                        <img src="assets/img/news1.png" alt="News image">
+                        <div class="news_item_info">
+                            <div>
+                            <span class="label">Financial services & banking</span>
+                                <h3 class="heading_tertiary">Bespoke Cloud Architecture <br> Design</h3>
+                                <p class="text_small">Innovative cloud solutions that transform the case management experience for teams.</p>
+                            </div>
+                            <a href="#" class="link">Read more
+                               <img src="assets/img/arrow_link.svg" alt="Arrrow">
+                            </a>
+                        </div>
+                    </article>
+                    <article class="news_item">
+                        <img src="assets/img/news2.png" alt="News image">
+                        <div class="news_item_info">
+                            <div>
+                            <span class="label">ML & Al</span>
+                                <h3 class="heading_tertiary">Al assistant for increased productivity in the workplace</h3>
+                                <p class="text_small">Collaborating on a custom UMA platform enables a business to evolve a traditional workspace into a smart, collaborative environment.</p>
+                            </div>
+                            <a href="#" class="link">Read more
+                               <img src="assets/img/arrow_link.svg" alt="Arrrow">
+                            </a>
+                        </div>
+                    </article>
+                    <article class="news_item">
+                        <img src="assets/img/news3.png" alt="News image">
+                        <div class="news_item_info">
+                            <div>
+                            <span class="label">Technology</span>
+                                <h3 class="heading_tertiary">Intuitive SaaS purchasing management platform</h3>
+                                <p class="text_small">Transforming the purchasing experience by making the buying process as automated and streamlined as possible.</p>
+                            </div>
+                            <a href="#" class="link">Read more
+                               <img src="assets/img/arrow_link.svg" alt="Arrrow">
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="work_section">
+            <img class="work_bg_img" src="assets/img/work_bg.png" alt="Background">
+            <div class="container">
+                <h2 class="heading_secondary">How we work</h2>
+                <p class="text_medium">We merge top-tier service delivery standards with unparalleled levels of solution customization.</p>
+                <div class="work_steps">
+                    <div class="work_steps_item">
+                         <span class="label">1 step</span>
+                        <h3 class="heading_tertiary">Contact Us</h3>
+                        <p class="text_small">Reach out via email or schedule a meeting. We'll reply within two hours to set up a convenient appointment.</p>
+                    </div>
+                    <span class="work_stage_label mobile">1 working day</span>
+                    <div class="work_steps_item">
+                        <span class="label">2 step</span>
+                       <h3 class="heading_tertiary">Consult with Our Specialist</h3>
+                       <p class="text_small">A market expert tailored to your industry will connect to discuss your needs and outline the next steps.</p>
+                   </div>
+                   <span class="work_stage_label mobile">up to 7 working days</span>
+                    <div class="work_steps_item">
+                            <span class="label">3 step</span>
+                        <h3 class="heading_tertiary">Review Our Proposal</h3>
+                        <p class="text_small">Receive a detailed service proposal with timelines and cost estimates for each phase of your project.</p>
+                    </div>
+                    <span class="work_stage_label mobile">7+ working days</span>
+                    <div class="work_steps_item">
+                        <span class="label">4 step</span>
+                    <h3 class="heading_tertiary">Finalize the Agreement</h3>
+                    <p class="text_small">Once you sign the contract, we’ll begin work and keep you informed of our progress.</p>
+                </div>
+                </div>
+                <div class="work_stages">
+                    <div class="work_stage">
+                         <div class="work_stage_rectangle"></div>
+                         <span class="work_stage_label">1 working day</span>
+                    </div>
+                    <div class="work_stage">
+                        <div class="work_stage_rectangle"></div>
+                        <span class="work_stage_label">up to 7 working days</span>
+                   </div>
+                   <div class="work_stage">
+                    <div class="work_stage_rectangle"></div>
+                    <span class="work_stage_label">7+ working days</span>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="do_section">
+            <div class="container">
+                <div class="do_content">
+                    <div>
+                        <h2 class="heading_secondary">What We Do</h2>
+                        <p class="text_medium">Avenga specializes in comprehensive IT transformation services, driving significant cost-efficiency through effective technology implementation.</p>
+                            <div class="swiper" id="do">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <div class="do_info">
+                                         <h3 class="do_title">Technology Solution Discovery</h3>
+                                         <p class="text_small">Transform your business idea into a well-executed project. After thorough analysis and validation of your concept, we will identify a tailored technology suite that aligns with your business objectives. From the start, we ensure cost-efficiency, exceptional quality, and technical excellence.</p>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="do_info">
+                                        <h3 class="do_title">Solution audit</h3>
+                                        <p class="text_small">An underperforming solution is more of a liability than an asset. Discover what's hindering your software with our solution audit services. Our experts will thoroughly evaluate your system and provide a detailed report of issues affecting its performance.</p>
+                                   </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="do_info">
+                                        <h3 class="do_title">Modernization discovery</h3>
+                                        <p class="text_small">Staying competitive requires moving beyond legacy platforms. We'll thoroughly analyze your current system to identify areas for improvement and modernization. Additionally, we'll offer recommendations for implementing these changes efficiently and with minimal disruption to your business.</p>
+                                   </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="do_info">
+                                        <h3 class="do_title">Migration discovery</h3>
+                                        <p class="text_small">n outdated infrastructure can hold back your business performance. Upgrade to a modern, secure environment with our consulting services. Avenga's experts will evaluate your app’s readiness for migration and create a detailed plan to ensure a smooth, predictable transition with minimal downtime.</p>
+                                   </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="do_info">
+                                        <h3 class="do_title">Capability enablement</h3>
+                                        <p class="text_small">If your delivery system is missing certain essential components, we can seamlessly and efficiently integrate them into your ecosystem. Avenga helps companies provide the solutions their clients need by ensuring smooth operation throughout the entire software development lifecycle.</p>
+                                   </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-navigation">
+                                    <div class="custom-swiper-button-prev-do">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.07734 9.41083L6.91067 3.57749C7.06784 3.4257 7.27834 3.3417 7.49684 3.3436C7.71534 3.3455 7.92435 3.43314 8.07885 3.58764C8.23336 3.74215 8.321 3.95116 8.3229 4.16966C8.3248 4.38816 8.2408 4.59866 8.089 4.75583L3.67817 9.16666H18.3332C18.5542 9.16666 18.7661 9.25446 18.9224 9.41074C19.0787 9.56702 19.1665 9.77898 19.1665 9.99999C19.1665 10.221 19.0787 10.433 18.9224 10.5892C18.7661 10.7455 18.5542 10.8333 18.3332 10.8333H3.67817L8.089 15.2442C8.1686 15.321 8.23208 15.413 8.27576 15.5147C8.31943 15.6163 8.34242 15.7257 8.34338 15.8363C8.34434 15.947 8.32326 16.0567 8.28135 16.1591C8.23945 16.2615 8.17758 16.3546 8.09933 16.4328C8.02109 16.5111 7.92805 16.5729 7.82563 16.6148C7.72322 16.6567 7.61349 16.6778 7.50284 16.6769C7.39219 16.6759 7.28284 16.6529 7.18117 16.6092C7.0795 16.5656 6.98754 16.5021 6.91067 16.4225L1.07734 10.5892C0.921112 10.4329 0.833349 10.221 0.833349 9.99999C0.833349 9.77902 0.921112 9.5671 1.07734 9.41083Z" fill="#5646CC"/>
+                                        </svg>                                            
+                                    </div>
+                                    <div>
+                                        <span class="current-slide-do"></span>
+                                        <span>/</span>
+                                        <span class="total-slides-do"></span>
+                                    </div>
+                                    <div class="custom-swiper-button-next-do">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.9227 9.41083L13.0893 3.57749C12.9322 3.4257 12.7217 3.3417 12.5032 3.3436C12.2847 3.3455 12.0757 3.43314 11.9211 3.58764C11.7666 3.74215 11.679 3.95116 11.6771 4.16966C11.6752 4.38816 11.7592 4.59866 11.911 4.75583L16.3218 9.16666H1.66683C1.44582 9.16666 1.23385 9.25446 1.07757 9.41074C0.921293 9.56702 0.833496 9.77898 0.833496 9.99999C0.833496 10.221 0.921293 10.433 1.07757 10.5892C1.23385 10.7455 1.44582 10.8333 1.66683 10.8333H16.3218L11.911 15.2442C11.8314 15.321 11.7679 15.413 11.7242 15.5147C11.6806 15.6163 11.6576 15.7257 11.6566 15.8363C11.6557 15.947 11.6767 16.0567 11.7186 16.1591C11.7605 16.2615 11.8224 16.3546 11.9007 16.4328C11.9789 16.5111 12.072 16.5729 12.1744 16.6148C12.2768 16.6567 12.3865 16.6778 12.4972 16.6769C12.6078 16.6759 12.7172 16.6529 12.8188 16.6092C12.9205 16.5656 13.0125 16.5021 13.0893 16.4225L18.9227 10.5892C19.0789 10.4329 19.1667 10.221 19.1667 9.99999C19.1667 9.77902 19.0789 9.5671 18.9227 9.41083Z" fill="#5646CC"/>
+                                        </svg>                                            
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="do_image">
+                            <img src="assets/img/do_img.png" alt="Mykhailo Romanchenko">
+                            <div class="do_image_caption">
+                                <h4 class="do_image_title">Mykhailo Romanchenko</h4>
+                                <p class="do_image_position">Director of Technology Consulting</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section class="offers_section">
+            <div class="container">
+                <h2 class="heading_secondary">Opting for Avenga offers:</h2>
+                <p class="text_medium">Avenga specializes in comprehensive IT transformation services, driving significant cost-efficiency through effective technology implementation.</p>
+                <div class="offers">
+                   <div class="offer_item">
+                     <span class="offer_number">01</span>
+                     <h3 class="heading_tertiary">Boosted Performance</h3>
+                     <p class="text_small">Achieve significant improvements in operational efficiency by gaining comprehensive insights into your assets and conditions.</p>
+                   </div>
+                   <div class="offer_item">
+                    <span class="offer_number">02</span>
+                    <h3 class="heading_tertiary">Proactive Maintenance</h3>
+                    <p class="text_small">Achieve significant improvements in operational efficiency by gaining comprehensive insights into your assets and conditions.</p>
+                  </div>
+                  <div class="offer_item">
+                    <span class="offer_number">03</span>
+                    <h3 class="heading_tertiary">Enhanced Flexibility</h3>
+                    <p class="text_small">Achieve significant improvements in operational efficiency by gaining comprehensive insights into your assets and conditions.</p>
+                  </div>
+                  <div class="offer_item">
+                    <span class="offer_number">04</span>
+                    <h3 class="heading_tertiary">Process Refinement</h3>
+                    <p class="text_small">Achieve significant improvements in operational efficiency by gaining comprehensive insights into your assets and conditions.</p>
+                  </div>
+                  <div class="offer_item">
+                    <span class="offer_number">05</span>
+                    <h3 class="heading_tertiary">Innovative Business Models</h3>
+                    <p class="text_small">Achieve significant improvements in operational efficiency by gaining comprehensive insights into your assets and conditions.</p>
+                  </div>
+                  <div class="offer_item">
+                    <span class="offer_number">06</span>
+                    <h3 class="heading_tertiary">Forward-Thinking Solutions</h3>
+                    <p class="text_small">Achieve significant improvements in operational efficiency by gaining comprehensive insights into your assets and conditions.</p>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <section class="technologies_section">
+            <div class="container">
+                <h2 class="heading_secondary">Technologies</h2>
+                <div class="tabs">
+                    <button class="tablinks active" onclick="openTab(event, 'Tab1')">Cloud</button>
+                    <button class="tablinks" onclick="openTab(event, 'Tab2')">Automation</button>
+                    <button class="tablinks" onclick="openTab(event, 'Tab3')">Date and AI</button>
+                    <button class="tablinks" onclick="openTab(event, 'Tab4')">Salesforce</button>
+                    <button class="tablinks" onclick="openTab(event, 'Tab5')">Microsoft</button>
+                    <button class="tablinks" onclick="openTab(event, 'Tab6')">Blockchain</button>
+                </div>
+
+                <div id="Tab1" class="tabcontent active">
+                    <div class="technology_info">
+                        <p class="text_large">Our team of certified AWS, Google Cloud, and Azure professionals is prepared to provide expert consulting, migration, and engineering services. Avenga delivers a comprehensive range of cloud solutions designed to enhance speed, reliability, and security for your needs.</p>
+                        <a href="#" class="btn_primary">Explore
+                            <img src="assets/img/arrow.svg" alt="Arrow">
+                        </a>
+                    </div>
+                    <div class="technology_numbers">
+                        <div class="technology_number_item">
+                            <h4 class="technology_number">35 %</h4>
+                            <p class="technology_number_caption">Total cost of ownership savings</p>
+                        </div>
+                            <div class="technology_number_item">
+                            <h4 class="technology_number">1 trillion</h4>
+                            <p class="technology_number_caption">Cloud computing market value by 2028</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="Tab2" class="tabcontent" style="display:none;">
+                    <div class="technology_info">
+                        <p class="text_large">Fortify your products and services against business disruptions. Gain a competitive edge by automating delivery pipelines, testing, and manual processes to scale opportunities and mitigate risks seamlessly.</p>
+                        <a href="#" class="btn_primary">Explore
+                            <img src="assets/img/arrow.svg" alt="Arrow">
+                        </a>
+                    </div>
+                    <div class="technology_numbers">
+                        <div class="technology_number_item">
+                            <h4 class="technology_number">33 %</h4>
+                            <p class="technology_number_caption">More time to improve infrastructure</p>
+                        </div>
+                            <div class="technology_number_item">
+                            <h4 class="technology_number">60 %</h4>
+                            <p class="technology_number_caption">Less time for handling support cases</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="Tab3" class="tabcontent" style="display:none;">
+                    <div class="technology_info">
+                        <p class="text_large">Harness the power of data to enhance decision-making, boost business agility, and enable accurate planning. Avenga supports businesses globally in collecting, processing, visualizing, and utilizing data to drive success.</p>
+                        <a href="#" class="btn_primary">Explore
+                            <img src="assets/img/arrow.svg" alt="Arrow">
+                        </a>
+                    </div>
+                    <div class="technology_numbers">
+                        <div class="technology_number_item">
+                            <h4 class="technology_number">95 %</h4>
+                            <p class="technology_number_caption">Businesses suffer from unstructured data</p>
+                        </div>
+                            <div class="technology_number_item">
+                            <h4 class="technology_number">82 %</h4>
+                            <p class="technology_number_caption">AI usage in risk management cases</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Tab4" class="tabcontent" style="display:none;">
+                    <div class="technology_info">
+                        <p class="text_large">Cultivate customer loyalty by delivering a unique buyer’s journey that sets you apart from competitors. As a certified Salesforce partner, Avenga offers bespoke Salesforce solutions to optimize sales and customer engagement.</p>
+                        <a href="#" class="btn_primary">Explore
+                            <img src="assets/img/arrow.svg" alt="Arrow">
+                        </a>
+                    </div>
+                    <div class="technology_numbers">
+                        <div class="technology_number_item">
+                            <h4 class="technology_number">52 %</h4>
+                            <p class="technology_number_caption">Increase of leads volume</p>
+                        </div>
+                            <div class="technology_number_item">
+                            <h4 class="technology_number">33 %</h4>
+                            <p class="technology_number_caption">CRM users worldwide</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Tab5" class="tabcontent" style="display:none;">
+                    <div class="technology_info">
+                        <p class="text_large">Optimize team productivity, coherence, and collaboration with Avenga’s tailored Microsoft solutions. Leverage Microsoft 365, SharePoint Intranet, and Power Platform to ensure efficient goal-oriented cooperation across your organization.</p>
+                        <a href="#" class="btn_primary">Explore
+                            <img src="assets/img/arrow.svg" alt="Arrow">
+                        </a>
+                    </div>
+                    <div class="technology_numbers">
+                        <div class="technology_number_item">
+                            <h4 class="technology_number">91 %</h4>
+                            <p class="technology_number_caption">Used by Fortune 100 companies</p>
+                        </div>
+                            <div class="technology_number_item">
+                            <h4 class="technology_number">79 %</h4>
+                            <p class="technology_number_caption">Healthcare organizations adopted Microsoft</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Tab6" class="tabcontent" style="display:none;">
+                    <div class="technology_info">
+                        <p class="text_large">Explore advanced digital security with blockchain technology. Our skilled blockchain developers at Avenga build decentralized solutions and applications to enhance transaction traceability and data security.</p>
+                        <a href="#" class="btn_primary">Explore
+                            <img src="assets/img/arrow.svg" alt="Arrow">
+                        </a>
+                    </div>
+                    <div class="technology_numbers">
+                        <div class="technology_number_item">
+                            <h4 class="technology_number">67 bln</h4>
+                            <p class="technology_number_caption">Blockchain market worth by 2026</p>
+                        </div>
+                            <div class="technology_number_item">
+                            <h4 class="technology_number">86 %</h4>
+                            <p class="technology_number_caption">Expected industry CAGR by 2030</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="partners_section">
+            <div class="container">
+                <h2 class="heading_secondary">Our partnerships</h2>
+                <ul class="partners">
+                    <li><img src="assets/img/partner1.png" alt="Partner"></li>
+                    <li><img src="assets/img/partner2.png" alt="Partner"></li>
+                    <li><img src="assets/img/partner3.png" alt="Partner"></li>
+                    <li><img src="assets/img/partner4.png" alt="Partner"></li>
+                    <li><img src="assets/img/partner5.png" alt="Partner"></li>
+                </ul>
+            </div>
+        </section>
+        <section class="blog_section">
+            <div class="container">
+                <h2 class="heading_secondary">Blog</h2>
+                       <div class="swiper" id="blog">
+                        <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                <article class="blog_item">
+                                    <img src="assets/img/blog1.png" alt="Blog image">
+                                    <div class="blog_item_info">
+                                        <div>
+                                            <h3 class="heading_tertiary">Avenga Contributes 1 Million Hryvnias for Okhmatdyt Hospital Reconstruction</h3>
+                                            <p class="text_small">Following the catastrophic missile attack on July 8, 2024, which inflicted significant damage on Ukraine’s largest children’s hospital, Okhmatdyt, Avenga has pledged a donation of 1,000,000 UAH to aid in the urgent rebuilding efforts.</p>
+                                        </div>
+                                        <a href="#" class="link">Read more
+                                           <img src="assets/img/arrow_link.svg" alt="Arrrow">
+                                        </a>
+                                       </div>
+                                   </article>
+                                </div>
+                                <div class="swiper-slide">
+                                    <article class="blog_item">
+                                        <img src="assets/img/blog2.png" alt="Blog image">
+                                        <div class="blog_item_info">
+                                            <div>
+                                                <h3 class="heading_tertiary">Conference Highlights: CollabDays, InfoShare, and MS Tech Summit</h3>
+                                                <p class="text_small">Catch up on the latest updates from the Microsoft 365 tech community, delve into the future of LLMs and AI Agents, and understand the implications of SharePoint Embedded’s general availability for enterprises.</p>
+                                            </div>
+                                            <a href="#" class="link">Read more
+                                                <img src="assets/img/arrow_link.svg" alt="Arrrow">
+                                            </a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide">
+                                    <article class="blog_item">
+                                        <img src="assets/img/blog3.png" alt="Blog image">
+                                        <div class="blog_item_info">
+                                            <div>
+                                                <h3 class="heading_tertiary">AI’s Impact on the Banking Sector</h3>
+                                                <p class="text_small">Explore how artificial intelligence is revolutionizing the banking industry by modernizing financial services, enhancing customer experiences, and fostering innovation.</p>
+                                            </div>
+                                            <a href="#" class="link">Read more
+                                                <img src="assets/img/arrow_link.svg" alt="Arrrow">
+                                            </a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide">
+                                    <article class="blog_item">
+                                        <img src="assets/img/blog4.png" alt="Blog image">
+                                        <div class="blog_item_info">
+                                            <div>
+                                                <h3 class="heading_tertiary">Custom App Development for Microsoft Teams</h3>
+                                                <p class="text_small">Uncover the potential of custom app development for Microsoft Teams and learn how to build tailored applications to enhance team functionality.</p>
+                                            </div>
+                                            <a href="#" class="link">Read more
+                                                <img src="assets/img/arrow_link.svg" alt="Arrrow">
+                                            </a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide">
+                                    <article class="blog_item">
+                                        <img src="assets/img/blog5.png" alt="Blog image">
+                                        <div class="blog_item_info">
+                                            <div>
+                                                <h3 class="heading_tertiary">Avenga Appoints New CEO: Ludovic Gaudé Succeeds Yuriy Adamchuk</h3>
+                                                <p class="text_small">Avenga, a leading global engineering and consulting platform, has announced Ludovic Gaudé as its new CEO, succeeding Yuriy Adamchuk.</p>
+                                            </div>
+                                            <a href="#" class="link">Read more
+                                                <img src="assets/img/arrow_link.svg" alt="Arrrow">
+                                            </a>
+                                        </div>
+                                    </article>
+                                </div>
+                    </div>
+                    <div class="swiper-navigation">
+                        <div class="custom-swiper-button-prev-blog">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.07734 9.41083L6.91067 3.57749C7.06784 3.4257 7.27834 3.3417 7.49684 3.3436C7.71534 3.3455 7.92435 3.43314 8.07885 3.58764C8.23336 3.74215 8.321 3.95116 8.3229 4.16966C8.3248 4.38816 8.2408 4.59866 8.089 4.75583L3.67817 9.16666H18.3332C18.5542 9.16666 18.7661 9.25446 18.9224 9.41074C19.0787 9.56702 19.1665 9.77898 19.1665 9.99999C19.1665 10.221 19.0787 10.433 18.9224 10.5892C18.7661 10.7455 18.5542 10.8333 18.3332 10.8333H3.67817L8.089 15.2442C8.1686 15.321 8.23208 15.413 8.27576 15.5147C8.31943 15.6163 8.34242 15.7257 8.34338 15.8363C8.34434 15.947 8.32326 16.0567 8.28135 16.1591C8.23945 16.2615 8.17758 16.3546 8.09933 16.4328C8.02109 16.5111 7.92805 16.5729 7.82563 16.6148C7.72322 16.6567 7.61349 16.6778 7.50284 16.6769C7.39219 16.6759 7.28284 16.6529 7.18117 16.6092C7.0795 16.5656 6.98754 16.5021 6.91067 16.4225L1.07734 10.5892C0.921112 10.4329 0.833349 10.221 0.833349 9.99999C0.833349 9.77902 0.921112 9.5671 1.07734 9.41083Z" fill="#5646CC"/>
+                              </svg>                                            
+                          </div>
+                          <div>
+                            <span class="current-slide-blog"></span>
+                              <span>/</span>
+                              <span class="total-slides-blog"></span>
+                          </div>
+                          <div class="custom-swiper-button-next-blog">
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M18.9227 9.41083L13.0893 3.57749C12.9322 3.4257 12.7217 3.3417 12.5032 3.3436C12.2847 3.3455 12.0757 3.43314 11.9211 3.58764C11.7666 3.74215 11.679 3.95116 11.6771 4.16966C11.6752 4.38816 11.7592 4.59866 11.911 4.75583L16.3218 9.16666H1.66683C1.44582 9.16666 1.23385 9.25446 1.07757 9.41074C0.921293 9.56702 0.833496 9.77898 0.833496 9.99999C0.833496 10.221 0.921293 10.433 1.07757 10.5892C1.23385 10.7455 1.44582 10.8333 1.66683 10.8333H16.3218L11.911 15.2442C11.8314 15.321 11.7679 15.413 11.7242 15.5147C11.6806 15.6163 11.6576 15.7257 11.6566 15.8363C11.6557 15.947 11.6767 16.0567 11.7186 16.1591C11.7605 16.2615 11.8224 16.3546 11.9007 16.4328C11.9789 16.5111 12.072 16.5729 12.1744 16.6148C12.2768 16.6567 12.3865 16.6778 12.4972 16.6769C12.6078 16.6759 12.7172 16.6529 12.8188 16.6092C12.9205 16.5656 13.0125 16.5021 13.0893 16.4225L18.9227 10.5892C19.0789 10.4329 19.1667 10.221 19.1667 9.99999C19.1667 9.77902 19.0789 9.5671 18.9227 9.41083Z" fill="#5646CC"/>
+                              </svg>                                            
+                          </div>
+                      </div>
+                       </div>
+        </section>
+        <section class="reviews_section">
+             <div class="container">
+               <h2 class="heading_secondary">Reviews</h2>
+               <p class="text_medium">Avenga specializes in comprehensive IT transformation services, driving significant cost-efficiency through effective technology implementation.</p>
+               <div class="swiper" id="review">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="review">
+                        <h3 class="heading_tertiary">R&D Services for a Legal Solutions Company</h3>
+                        <div class="review_stars">
+                          <img src="assets/img/star.svg" alt="Star">
+                          <img src="assets/img/star.svg" alt="Star">
+                          <img src="assets/img/star.svg" alt="Star">
+                          <img src="assets/img/star.svg" alt="Star">
+                          <img src="assets/img/star.svg" alt="Star">
+                        </div>
+                        <p class="text_small">“Avenga's (formerly Core Value Inc) strength lies in their collaborative spirit and innovative approach." Avenga excels in developing state-of-the-art software with minimal supervision. Their disciplined team swiftly addresses any web-related challenges, showcasing their expertise.”</p>
+                    </div>
+                    <div class="review">
+                        <h3 class="heading_tertiary">Engineering Staff Augmentation & Consulting for an IT Company</h3>
+                        <div class="review_stars">
+                          <img src="assets/img/star.svg" alt="Star">
+                          <img src="assets/img/star.svg" alt="Star">
+                          <img src="assets/img/star.svg" alt="Star">
+                          <img src="assets/img/star.svg" alt="Star">
+                          <img src="assets/img/star.svg" alt="Star">
+                        </div>
+                        <p class="text_small">"As trust developed, the team began making significant contributions across various areas." Avenga (formerly Perfectial) has provided staff who have become integral to the company’s IT operations, demonstrating a strong commitment to supporting the client's needs.”</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="review">
+                        <h3 class="heading_tertiary">IT Consulting & Cloud Migration for a Telecom Company</h3>
+                        <div class="review_stars">
+                          <img src="assets/img/star.svg" alt="Star">
+                          <img src="assets/img/star.svg" alt="Star">
+                          <img src="assets/img/star.svg" alt="Star">
+                          <img src="assets/img/star.svg" alt="Star">
+                          <img src="assets/img/star.svg" alt="Star">
+                        </div>
+                        <p class="text_small">"We were thoroughly impressed by the quality of service and IT expertise." Avenga successfully met all project expectations using an Agile methodology, delivering exceptional service and support throughout the engagement.”</p>
+                    </div>
+                    <div class="review">
+                        <h3 class="heading_tertiary">Complete Salesforce Migration & Development for a Consulting Firm</h3>
+                        <div class="review_stars">
+                          <img src="assets/img/star.svg" alt="Star">
+                          <img src="assets/img/star.svg" alt="Star">
+                          <img src="assets/img/star.svg" alt="Star">
+                          <img src="assets/img/star.svg" alt="Star">
+                          <img src="assets/img/star.svg" alt="Star">
+                        </div>
+                        <p class="text_small">"Whenever we express a new requirement, they grasp it immediately and handle it efficiently." Avenga (formerly Core Value Inc) demonstrated exceptional Salesforce expertise and thorough business analysis, leading to a successful transformation of workflows. Their agile approach to implementing new technologies ensures continuous improvement and adaptation.”</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-navigation">
+                    <div class="custom-swiper-button-prev-review">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.07734 9.41083L6.91067 3.57749C7.06784 3.4257 7.27834 3.3417 7.49684 3.3436C7.71534 3.3455 7.92435 3.43314 8.07885 3.58764C8.23336 3.74215 8.321 3.95116 8.3229 4.16966C8.3248 4.38816 8.2408 4.59866 8.089 4.75583L3.67817 9.16666H18.3332C18.5542 9.16666 18.7661 9.25446 18.9224 9.41074C19.0787 9.56702 19.1665 9.77898 19.1665 9.99999C19.1665 10.221 19.0787 10.433 18.9224 10.5892C18.7661 10.7455 18.5542 10.8333 18.3332 10.8333H3.67817L8.089 15.2442C8.1686 15.321 8.23208 15.413 8.27576 15.5147C8.31943 15.6163 8.34242 15.7257 8.34338 15.8363C8.34434 15.947 8.32326 16.0567 8.28135 16.1591C8.23945 16.2615 8.17758 16.3546 8.09933 16.4328C8.02109 16.5111 7.92805 16.5729 7.82563 16.6148C7.72322 16.6567 7.61349 16.6778 7.50284 16.6769C7.39219 16.6759 7.28284 16.6529 7.18117 16.6092C7.0795 16.5656 6.98754 16.5021 6.91067 16.4225L1.07734 10.5892C0.921112 10.4329 0.833349 10.221 0.833349 9.99999C0.833349 9.77902 0.921112 9.5671 1.07734 9.41083Z" fill="#5646CC"/>
+                          </svg>                                            
+                      </div>
+                      <div>
+                        <span class="current-slide-review"></span>
+                          <span>/</span>
+                          <span class="total-slides-review"></span>
+                      </div>
+                      <div class="custom-swiper-button-next-review">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M18.9227 9.41083L13.0893 3.57749C12.9322 3.4257 12.7217 3.3417 12.5032 3.3436C12.2847 3.3455 12.0757 3.43314 11.9211 3.58764C11.7666 3.74215 11.679 3.95116 11.6771 4.16966C11.6752 4.38816 11.7592 4.59866 11.911 4.75583L16.3218 9.16666H1.66683C1.44582 9.16666 1.23385 9.25446 1.07757 9.41074C0.921293 9.56702 0.833496 9.77898 0.833496 9.99999C0.833496 10.221 0.921293 10.433 1.07757 10.5892C1.23385 10.7455 1.44582 10.8333 1.66683 10.8333H16.3218L11.911 15.2442C11.8314 15.321 11.7679 15.413 11.7242 15.5147C11.6806 15.6163 11.6576 15.7257 11.6566 15.8363C11.6557 15.947 11.6767 16.0567 11.7186 16.1591C11.7605 16.2615 11.8224 16.3546 11.9007 16.4328C11.9789 16.5111 12.072 16.5729 12.1744 16.6148C12.2768 16.6567 12.3865 16.6778 12.4972 16.6769C12.6078 16.6759 12.7172 16.6529 12.8188 16.6092C12.9205 16.5656 13.0125 16.5021 13.0893 16.4225L18.9227 10.5892C19.0789 10.4329 19.1667 10.221 19.1667 9.99999C19.1667 9.77902 19.0789 9.5671 18.9227 9.41083Z" fill="#5646CC"/>
+                          </svg>                                            
+                      </div>
+                  </div>
+            </div>
+        </div>
+             </div>
+        </section>
+        <section class="faq_section">
+            <div class="container">
+              <h2 class="heading_secondary">Frequently Asked Questions</h2>
+              <div class="faq_items">
+                <div class="faq_column">
+                    <div class="faq_item">
+                        <div class="faq_question_row">
+                            <h3 class="faq_question">In addition to general IT strategy, do you offer specialized technology consulting for specific technologies or business functions?</h3>
+                            <button class="faq_question_btn faq_question_open" style="display: none;">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M28.8281 13.8281H16.1719V1.17188C16.1719 0.524648 15.6472 0 15 0C14.3528 0 13.8281 0.524648 13.8281 1.17188V13.8281H1.17188C0.524648 13.8281 0 14.3528 0 15C0 15.6472 0.524648 16.1719 1.17188 16.1719H13.8281V28.8281C13.8281 29.4754 14.3528 30 15 30C15.6472 30 16.1719 29.4754 16.1719 28.8281V16.1719H28.8281C29.4754 16.1719 30 15.6472 30 15C30 14.3528 29.4754 13.8281 28.8281 13.8281Z" fill="#1E1E1E"/>
+                                    </svg>                            
+                            </button>
+                            <button class="faq_question_btn faq_question_close">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.8281 13.8281H28.8281C29.4754 13.8281 30 14.3528 30 15C30 15.6472 29.4754 16.1719 28.8281 16.1719H16.1719H1.17188C0.524648 16.1719 0 15.6472 0 15C0 14.3528 0.524648 13.8281 1.17188 13.8281H13.8281Z" fill="#1E1E1E"/>
+                                    </svg>                                                         
+                            </button>
+                        </div>
+                        <div class="faq_answer" style="max-height: unset; padding-top: 20px;">
+                          <p class="text_small">Absolutely. We provide a variety of specialized consulting services, including SAAS, data science, cloud, IoT, and cybersecurity consulting. Contact us to discover how we can address your unique needs.</p>
+                        </div>
+                      </div>
+                  
+                      <div class="faq_item">
+                        <div class="faq_question_row">
+                            <h3 class="faq_question">How do you evaluate the performance of your IT consulting services?</h3>
+                            <button class="faq_question_btn faq_question_open">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M28.8281 13.8281H16.1719V1.17188C16.1719 0.524648 15.6472 0 15 0C14.3528 0 13.8281 0.524648 13.8281 1.17188V13.8281H1.17188C0.524648 13.8281 0 14.3528 0 15C0 15.6472 0.524648 16.1719 1.17188 16.1719H13.8281V28.8281C13.8281 29.4754 14.3528 30 15 30C15.6472 30 16.1719 29.4754 16.1719 28.8281V16.1719H28.8281C29.4754 16.1719 30 15.6472 30 15C30 14.3528 29.4754 13.8281 28.8281 13.8281Z" fill="#1E1E1E"/>
+                                    </svg>                            
+                            </button>
+                            <button class="faq_question_btn faq_question_close" style="display: none;">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.8281 13.8281H28.8281C29.4754 13.8281 30 14.3528 30 15C30 15.6472 29.4754 16.1719 28.8281 16.1719H16.1719H1.17188C0.524648 16.1719 0 15.6472 0 15C0 14.3528 0.524648 13.8281 1.17188 13.8281H13.8281Z" fill="#1E1E1E"/>
+                                    </svg>                                                         
+                            </button>
+                        </div>
+                        <div class="faq_answer">
+                          <p class="text_small">We tailor our services around KPIs that we develop in collaboration with our clients. These metrics can be business-focused (like return on assets and sales) or IT-focused (such as MTTR, system availability, and operating costs).</p>
+                        </div>
+                      </div>
+                </div>
+              
+                <div class="faq_column">
+                  <div class="faq_item">
+                    <div class="faq_question_row">
+                        <h3 class="faq_question">Which industries does Avenga serve?</h3>
+                        <button class="faq_question_btn faq_question_open">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28.8281 13.8281H16.1719V1.17188C16.1719 0.524648 15.6472 0 15 0C14.3528 0 13.8281 0.524648 13.8281 1.17188V13.8281H1.17188C0.524648 13.8281 0 14.3528 0 15C0 15.6472 0.524648 16.1719 1.17188 16.1719H13.8281V28.8281C13.8281 29.4754 14.3528 30 15 30C15.6472 30 16.1719 29.4754 16.1719 28.8281V16.1719H28.8281C29.4754 16.1719 30 15.6472 30 15C30 14.3528 29.4754 13.8281 28.8281 13.8281Z" fill="#1E1E1E"/>
+                                </svg>                            
+                        </button>
+                        <button class="faq_question_btn faq_question_close" style="display: none;">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8281 13.8281H28.8281C29.4754 13.8281 30 14.3528 30 15C30 15.6472 29.4754 16.1719 28.8281 16.1719H16.1719H1.17188C0.524648 16.1719 0 15.6472 0 15C0 14.3528 0.524648 13.8281 1.17188 13.8281H13.8281Z" fill="#1E1E1E"/>
+                                </svg>                                                         
+                        </button>
+                    </div>
+                    <div class="faq_answer">
+                      <p class="text_small">We have extensive experience working with companies across various sectors, including banking, automotive, healthcare, media and communications, education, manufacturing, consumer goods, retail, logistics, transportation, insurance, and more.</p>
+                    </div>
+                  </div>
+
+                  <div class="faq_item">
+                    <div class="faq_question_row">
+                        <h3 class="faq_question">Do Avenga’s technology consultants provide financial and strategic advice?</h3>
+                        <button class="faq_question_btn faq_question_open">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28.8281 13.8281H16.1719V1.17188C16.1719 0.524648 15.6472 0 15 0C14.3528 0 13.8281 0.524648 13.8281 1.17188V13.8281H1.17188C0.524648 13.8281 0 14.3528 0 15C0 15.6472 0.524648 16.1719 1.17188 16.1719H13.8281V28.8281C13.8281 29.4754 14.3528 30 15 30C15.6472 30 16.1719 29.4754 16.1719 28.8281V16.1719H28.8281C29.4754 16.1719 30 15.6472 30 15C30 14.3528 29.4754 13.8281 28.8281 13.8281Z" fill="#1E1E1E"/>
+                                </svg>                            
+                        </button>
+                        <button class="faq_question_btn faq_question_close" style="display: none;">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8281 13.8281H28.8281C29.4754 13.8281 30 14.3528 30 15C30 15.6472 29.4754 16.1719 28.8281 16.1719H16.1719H1.17188C0.524648 16.1719 0 15.6472 0 15C0 14.3528 0.524648 13.8281 1.17188 13.8281H13.8281Z" fill="#1E1E1E"/>
+                                </svg>                                                         
+                        </button>
+                    </div>
+                    <div class="faq_answer">
+                      <p class="text_small">Yes, we offer comprehensive services that include designing custom software platforms, optimizing infrastructures, mitigating security risks, and identifying optimal technology investment strategies. Additionally, we provide advice on cost-effective integration of new software across different departments.</p>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+        <section class="contact_section">
+            <div class="container">
+               <h2 class="heading_secondary">Ready to innovate in your business?</h2>
+               <p class="faq_caption">We! Let's start our path to success!</p>
+               <form action="" class="contact_form">
+                <div class="contact_form_fields">
+                    <input class="contact_form_input" type="text" name="name" id="name" placeholder="Full name"/>
+                    <input class="contact_form_input" type="email" name="email" id="email" placeholder="Email address*" required/>
+                    <input class="contact_form_input" type="text" name="message" id="message" placeholder="Message*" required/>
+                    <div class="contact_checkbox">
+                        <input type="checkbox" name="privacy" id="privacy">
+                        <span class="custom-checkbox"></span>
+                        <p class="contact_checkbox_label">Yes, I have read and agree to the Data Privacy and Legal Notice.*</p>
+                    </div>
+                    
+                    <button class="btn_primary" type="submit">Send
+                      <img src="assets/img/arrow.svg" alt="Arrow">
+                    </button>
+                </div>
+               </form>
+            </div>
+        </section>
+    </main>
+    <div class="container">
+        <footer class="footer">
+            <div class="footer_row">
+                <a href="/" class="footer_logo">
+                    <img src="assets/img/logo.png" alt="Logo">
+                </a>
+                <nav>
+                    <ul class="footer_menu">
+                        <li><a href="/" class="footer_link">Home</a></li>
+                        <li><a href="/" class="footer_link">Industries</a></li>
+                        <li><a href="/" class="footer_link">Services</a></li>
+                        <li><a href="/" class="footer_link">Technologies</a></li>
+                        <li><a href="/" class="footer_link">Success</a></li>
+                        <li><a href="/" class="footer_link">About</a></li>
+                        <li><a href="/" class="footer_link">Insights</a></li>
+                        <li><a href="/" class="footer_link">Career</a></li>
+                        <li><a href="/" class="footer_link">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer_row">
+                <p class="footer_caption">© 2024 Avenga. All rights reserved.</p>
+                <a href="/privacy.html" class="footer_link">Privacy Policy</a>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</html>
